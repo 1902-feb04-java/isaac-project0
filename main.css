@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+html,body{
+    height: 100%;
+    background:
+    linear-gradient(0.25turn, #346ea5af, #ebf8e19a, #f6673caf)
+    ,url("https://wallpapercave.com/wp/wp2528663.jpg");
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title{
+    position: relative;
+    margin-top: 5px;
+    color: black;
+    text-align: center;
+    font-size: 80px;
+    font-family: "Titillium Web";
+
+}
+.battle-box{
+    position: relative;
+    margin-top: auto;
+    display: block;
+    margin-bottom: 10%;
+    width: 800px;
+    background-color: rgba(161, 195, 235, 0.966);
+    height: 500px;
+    background-image: url("assets/battle_background_grass.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%; /*May need to make smaller*/
+    z-index: 1;
+}
+.opponent-box{
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    border-radius: 10%;
+    top: 8%;
+    left: 8%;
+    background: rgb(230, 218, 218);
+    border: 3px solid black;
+}
