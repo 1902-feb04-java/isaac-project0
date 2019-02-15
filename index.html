@@ -13,11 +13,61 @@
         <h1 class="title">Poké Survivor</h1>
         <!-- Battle Time!-->
         <div class="battle-box">
+
+            <!--box at the top left corner, displays opponent pokemon status-->
             <div class="opponent-box">
-                <h3 id="opponent-pokemon">Pokemon 1</h3>
+                <h3 id="pokemon">Pokemon 1</h3>
+                <div class="hp-bar-top">
+                    <div class="hp-bar-fill"></div>
+                </div>
+                <h4 class="level">Lvl.</h4>
             </div>
 
+            <!--box displaying enemy Pokémon sprite-->
+            <div class="box-top-right">
+                <img src="" class ="top-pokemon"alt="">
+            </div>
+
+            <!--box displaying user Pokémon sprite-->
+            <div class="box-bottom-left">
+                <img src="" class="bottom-pokemon" alt="">
+            </div>
+
+            <!--box at bottom right corner, displays user pokemon status-->
+            <div class="user-box">
+                <h3 id="pokemon">Pokemon 2</h3>
+                <div class="hp-bar-bottom">
+                    <div class="hp-bar-fill"></div>
+                </div>
+                <h4 class="level">Lvl.</h4>
+                <h4 class="hp"></h4>
+            </div>
+
+            <div class="bottom-menu">
+                <div class="battle-text left-text-box">
+                    <!--Add text here-->
+                </div>
+                <div class="right-text-box">
+                    <div id="userOptions">
+                        <h4 class="battle-option-fight"></h4>
+                        <h4 class="battle-option-pokemon"></h4>
+                        <h4 class="battle-option-run"></h4>
+                        <h4 class="batle-option-item"></h4>
+                    </div>
+                    <div id="fightOptions">
+                        <h4 class="battle-attack-1"></h4>
+                        <h4 class="battle-attack-2"></h4>
+                        <h4 class="battle-attack-3"></h4>
+                        <h4 class="battle-attack-4"></h4>
+                    </div>
+                    <div id="runOptions">
+                        <h4 class="run-option-1"></h4>
+                        <h4 class="run-option-2"></h4>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!--battle box ending-->
 
     </div>
     
