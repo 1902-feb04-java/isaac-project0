@@ -6,7 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    
 </head>
 <body>
     <div id="poke-survivor">
@@ -16,8 +16,8 @@
 
             <!--box at the top left corner, displays opponent pokemon status-->
             <div class="opponent-box">
-                <h3 id="pokemon">Pokemon 1</h3>
-                <div class="hp-bar-top">
+                <h3 id="enemy-pokemon-name">Pokemon 1</h3>
+                <div id="hp-bar-top">
                     <div class="hp-bar-fill"></div>
                 </div>
                 <h4 class="level">Lvl.</h4>
@@ -25,47 +25,47 @@
 
             <!--box displaying enemy Pokémon sprite-->
             <div class="box-top-right">
-                <img src="" class ="top-pokemon"alt="">
+                <img src="" id ="top-pokemon"alt="">
             </div>
 
             <!--box displaying user Pokémon sprite-->
             <div class="box-bottom-left">
-                <img src="" class="bottom-pokemon" alt="">
+                <img src="" id="bottom-pokemon" alt="">
             </div>
 
             <!--box at bottom right corner, displays user pokemon status-->
             <div class="user-box">
-                <h3 id="pokemon">Pokemon 2</h3>
-                <div class="hp-bar-bottom">
+                <h3 id="user-pokemon-name">Pokemon 2</h3>
+                <div id="hp-bar-bottom">
                     <div class="hp-bar-fill"></div>
                 </div>
                 <h4 class="level">Lvl.</h4>
-                <h4 class="hp">100/100</h4>
+                <h4 class="user-hp">100/100</h4>
             </div>
 
             <div class="bottom-menu">
-                <div class="battle-text text-left-box">
+                <div id="battle-text">
                     <!--Add text here-->
                     What are you going to do?
                 </div>
-                <div class="right-text-box">
+                <div id="right-text-box">
                     <div id="userOptions">
-                        <h4 class="battle-option-1">1</h4>
-                        <h4 class="battle-option-2">2</h4>
-                        <h4 class="battle-option-3">3</h4>
-                        <h4 class="battle-option-4">4</h4>
+                        <h4 id="battle-option-1" ></h4>
+                        <h4 id="battle-option-2" ></h4>
+                        <h4 id="battle-option-3" ></h4>
+                        <h4 id="battle-option-4" ></h4>
                     </div>
                     <!--Pokémon Moves-->
-                    <div id="fightOptions">
-                        <h4 class="battle-option-1">1</h4>
-                        <h4 class="battle-option-2">2</h4>
-                        <h4 class="battle-option-3">3</h4>
-                        <h4 class="battle-option-4">4</h4>
+                    <div id="fight-options">
+                        <h4 id="enemy-option-1"></h4>
+                        <h4 id="enemy-option-2"></h4>
+                        <h4 id="enemy-option-3"></h4>
+                        <h4 id="enemy-option-4"></h4>
                     </div>
                     <!--User may want to skip battle...-->
-                    <div id="runOptions">
-                        <h4 class="battle-option-1">1</h4>
-                        <h4 class="battle-option-2">2</h4>
+                    <div id="run-options">
+                        <h4 id="battle-option-1"></h4>
+                        <h4 id="battle-option-2"></h4>
                     </div>
                 </div>
             </div>
@@ -73,6 +73,8 @@
         <!--battle box ending-->
 
     </div>
+    <!--Our Script file-->
+    <script src="main.js"></script>
     
 </body>
 </html>
